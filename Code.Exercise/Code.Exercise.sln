@@ -9,16 +9,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Features", "Features", "{54
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Steps", "Steps", "{E5AAA2C0-7AE3-4B9A-B5F1-31E16E9CA4B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Code.Exercise.WebManager", "Code.Exercise.WebManager\Code.Exercise.WebManager.csproj", "{9C60F4F2-0621-4BF6-A814-D9F027459E6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Code.Exercise.WebManager", "Code.Exercise.WebManager\Code.Exercise.WebManager.csproj", "{9C60F4F2-0621-4BF6-A814-D9F027459E6C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Code.Exercise.Helper", "Code.Exercise.Helper\Code.Exercise.Helper.csproj", "{62E53D4D-13F5-4B18-B3C5-FFF4B542A6ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Code.Exercise.Helper", "Code.Exercise.Helper\Code.Exercise.Helper.csproj", "{62E53D4D-13F5-4B18-B3C5-FFF4B542A6ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Code.Exercise.Features", "Code.Exercise.Features\Code.Exercise.Features.csproj", "{21E05EBF-94C1-4B9D-87E7-97713E7FB4AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Code.Exercise.Features", "Code.Exercise.Features\Code.Exercise.Features.csproj", "{21E05EBF-94C1-4B9D-87E7-97713E7FB4AE}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6D01305F-A285-4B74-BE3B-C1526D00DE0B} = {6D01305F-A285-4B74-BE3B-C1526D00DE0B}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Code.Exercise.Steps", "Code.Exercise.Steps\Code.Exercise.Steps.csproj", "{6D01305F-A285-4B74-BE3B-C1526D00DE0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Code.Exercise.Steps", "Code.Exercise.Steps\Code.Exercise.Steps.csproj", "{6D01305F-A285-4B74-BE3B-C1526D00DE0B}"
 	ProjectSection(ProjectDependencies) = postProject
 		{62E53D4D-13F5-4B18-B3C5-FFF4B542A6ED} = {62E53D4D-13F5-4B18-B3C5-FFF4B542A6ED}
 		{9C60F4F2-0621-4BF6-A814-D9F027459E6C} = {9C60F4F2-0621-4BF6-A814-D9F027459E6C}
@@ -26,12 +26,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Code.Exercise.Steps", "Code
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pages", "Pages", "{B871F3FE-840C-43E9-83B9-CFAB2B86D48E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Code.Exercise.Pages", "Code.Exercise.Pages\Code.Exercise.Pages.csproj", "{77EA6189-98D1-4B71-9280-DE97C860CDC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Code.Exercise.Pages", "Code.Exercise.Pages\Code.Exercise.Pages.csproj", "{77EA6189-98D1-4B71-9280-DE97C860CDC6}"
 	ProjectSection(ProjectDependencies) = postProject
 		{D93D9988-089A-4BFA-9160-062DD68360A3} = {D93D9988-089A-4BFA-9160-062DD68360A3}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Code.Exercise.Locators", "Code.Exercise.Locators\Code.Exercise.Locators.csproj", "{D93D9988-089A-4BFA-9160-062DD68360A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Code.Exercise.Locators", "Code.Exercise.Locators\Code.Exercise.Locators.csproj", "{D93D9988-089A-4BFA-9160-062DD68360A3}"
 	ProjectSection(ProjectDependencies) = postProject
 		{62E53D4D-13F5-4B18-B3C5-FFF4B542A6ED} = {62E53D4D-13F5-4B18-B3C5-FFF4B542A6ED}
 		{9C60F4F2-0621-4BF6-A814-D9F027459E6C} = {9C60F4F2-0621-4BF6-A814-D9F027459E6C}

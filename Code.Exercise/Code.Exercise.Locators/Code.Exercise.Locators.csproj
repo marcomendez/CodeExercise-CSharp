@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <AssemblyName>Code.Exercise.Elements</AssemblyName>
-    <RootNamespace>Code.Exercise.Elements</RootNamespace>
+    <AssemblyName>Code.Exercise.Locators</AssemblyName>
+    <RootNamespace>Code.Exercise.Locators</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

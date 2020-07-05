@@ -1,7 +1,7 @@
-﻿using Code.Exercise.Elements.Locators;
-using Code.Exercise.Helper.Enums;
+﻿using Code.Exercise.Helper.Enums;
+using Code.Exercise.Locators.Locators;
 
-namespace Code.Exercise.Elements.Interfaces
+namespace Code.Exercise.Locators.Interfaces
 {
     public interface IWebElement
     {

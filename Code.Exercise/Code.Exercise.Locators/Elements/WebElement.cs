@@ -1,9 +1,9 @@
-﻿using Code.Exercise.Elements.Interfaces;
-using Code.Exercise.Elements.Locators;
-using Code.Exercise.Helper.Enums;
+﻿using Code.Exercise.Helper.Enums;
+using Code.Exercise.Locators.Interfaces;
+using Code.Exercise.Locators.Locators;
 using Code.Exercise.WebManager;
 
-namespace Code.Exercise.Elements
+namespace Code.Exercise.Locators.Elements
 {
     public class WebElement : IWebElement
     {
