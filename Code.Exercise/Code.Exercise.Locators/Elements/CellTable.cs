@@ -1,24 +1,19 @@
 ﻿using Code.Exercise.Elements.Interfaces;
 using Code.Exercise.Elements.Locators;
 using Code.Exercise.Helper.Enums;
-
 namespace Code.Exercise.Elements.Elements
 {
     /// <summary>
-    /// Handles button type elements.
+    /// Handles Cell table type elements.
     /// </summary>
-    public class Button : WebElement, IClickeable
+    public class CellTable : WebElement, IClickeable
     {
-        /// <summary>
-        /// Constructors.
-        /// </summary>
-        /// <param name="locator">Locator info.</param>
-        public Button(Locator locator) : base(ElementType.Button, locator)
+        public CellTable(Locator locator) : base(ElementType.CellTable, locator)
         {
         }
 
         /// <summary>
-        /// Clicks on Element.
+        /// Clicks on WebElement.
         /// </summary>
         public void Click()
         {

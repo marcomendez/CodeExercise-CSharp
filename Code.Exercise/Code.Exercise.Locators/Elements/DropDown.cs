@@ -4,12 +4,18 @@ using Code.Exercise.Helper.Enums;
 
 namespace Code.Exercise.Elements.Elements
 {
+    /// <summary>
+    /// Handles DropDown type elements.
+    /// </summary>
     public class DropDown : WebElement, IClickeable
     {
-        public DropDown(string name, Locator locator) : base(name, ElementType.DropDown, locator)
+        public DropDown(Locator locator) : base(ElementType.DropDown, locator)
         {
         }
 
+        /// <summary>
+        /// Clicks on WebElement.
+        /// </summary>
         public void Click()
         {
             Element.Click();

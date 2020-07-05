@@ -3,9 +3,12 @@ using Code.Exercise.Helper.Enums;
 
 namespace Code.Exercise.Elements.Elements
 {
+    /// <summary>
+    /// Handles Label type elements.
+    /// </summary>
     public class Label : WebElement
     {
-        public Label(string name, Locator locator) : base(name, ElementType.Label, locator)
+        public Label(Locator locator) : base(ElementType.Label, locator)
         {
         }
     }

@@ -24,7 +24,7 @@ namespace Code.Exercise.Steps
         }
 
         [StepDefinition(@"I verify that the following values are( not|) displayed on table")]
-        public void VerifyThatElementsAreDisplayed(string not, Table table)
+        public void VerifyThatElementsDisplayed(string not, Table table)
         {
             var products = table.CreateSet<Product>();
             
@@ -32,7 +32,7 @@ namespace Code.Exercise.Steps
             {
                 string row = $"*//table/descendant::tr[td['Description'][contains(., '{item.Description}')] and td['Avail'][contains(., '{item.Avail}')] ]";
 
-                CellTable cellTable = new CellTable(string.Empty, new Locator(LocatorType.XPath, row));
+                CellTable cellTable = new CellTable(new Locator(LocatorType.XPath, row));
 
                 if(string.IsNullOrEmpty(not))
                 {
