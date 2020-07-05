@@ -3,7 +3,7 @@ using Code.Exercise.Elements.Locators;
 using Code.Exercise.Helper.Enums;
 using Code.Exercise.WebManager;
 
-namespace Code.Exercise.Elements
+namespace Code.Exercise.Elements.Elements
 {
     public class WebElement : IWebElement
     {

@@ -1,4 +1,4 @@
-﻿namespace Code.Exercise.Locators.Interfaces
+﻿namespace Code.Exercise.Elements.Interfaces
 {
     public interface IClickeable
     {

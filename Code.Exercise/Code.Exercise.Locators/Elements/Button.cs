@@ -1,6 +1,6 @@
-﻿using Code.Exercise.Elements.Locators;
+﻿using Code.Exercise.Elements.Interfaces;
+using Code.Exercise.Elements.Locators;
 using Code.Exercise.Helper.Enums;
-using Code.Exercise.Locators.Interfaces;
 
 namespace Code.Exercise.Elements.Elements
 {

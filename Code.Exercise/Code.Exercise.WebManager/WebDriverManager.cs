@@ -24,12 +24,13 @@ namespace Code.Exercise.WebManager
         }
 
         /// <summary>
-        /// Starts, Open, and Maximize WebDriver.
+        /// Starts, Open, navigate to Url and Maximize browser.
         /// </summary>
-        public void Start()
+        /// <param name="url">Url to navigate.</param>
+        public void Start(string url)
         {
             webDriver = new ChromeDriver();
-            webDriver.Navigate().GoToUrl(Env.WebAppUrl);
+            webDriver.Navigate().GoToUrl(url);
             webDriver.Manage().Window.Maximize();
         }
 
