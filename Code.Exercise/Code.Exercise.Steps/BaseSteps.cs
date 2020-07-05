@@ -1,7 +1,7 @@
-﻿using Code.Exercise.Helper;
+﻿using Code.Exercise.Elements.Locators;
+using Code.Exercise.Helper;
 using Code.Exercise.Helper.Attributes;
 using Code.Exercise.Helper.Enums;
-using Code.Exercise.Locators.Locators;
 using System;
 using System.Linq;
 using System.Reflection;
@@ -16,9 +16,9 @@ namespace Code.Exercise.Steps
 
         private const string PagesAssemblyName = "Code.Exercise.Pages";
 
-        private const string ElementTypeClassName = "Code.Exercise.Locators.Elements.{0}";
+        private const string ElementTypeClassName = "Code.Exercise.Elements.Elements.{0}";
 
-        private const string ElementsAssemblyName = "Code.Exercise.Locators";
+        private const string ElementsAssemblyName = "Code.Exercise.Elements";
 
         public BaseSteps(ScenarioContext injectedContext)
         {

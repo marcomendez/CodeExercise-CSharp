@@ -1,8 +1,8 @@
-﻿using Code.Exercise.Helper.Enums;
-using Code.Exercise.Locators.Interfaces;
-using Code.Exercise.Locators.Locators;
+﻿using Code.Exercise.Elements.Interfaces;
+using Code.Exercise.Elements.Locators;
+using Code.Exercise.Helper.Enums;
 
-namespace Code.Exercise.Locators.Elements
+namespace Code.Exercise.Elements.Elements
 {
     public class Button : WebElement, IClickeable
     {

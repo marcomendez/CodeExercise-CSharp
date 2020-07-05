@@ -18,7 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Code.Exercise.Helper\Code.Exercise.Helper.csproj" />
-    <ProjectReference Include="..\Code.Exercise.Locators\Code.Exercise.Locators.csproj" />
+    <ProjectReference Include="..\Code.Exercise.Locators\Code.Exercise.Elements.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,4 +1,5 @@
 ﻿using Code.Exercise.Steps;
+using Code.Exercise.WebManager;
 using TechTalk.SpecFlow;
 
 namespace Code.Exercise.Features.Hooks
@@ -10,16 +11,10 @@ namespace Code.Exercise.Features.Hooks
         {
         }
 
-        [BeforeScenario]
-        public void BeforeScenario()
+        [After]
+        public void After()
         {
-            //TODO: implement logic that has to run before executing each scenario
-        }
-
-        [AfterScenario]
-        public void AfterScenario()
-        {
-            //TODO: implement logic that has to run after executing each scenario
+            WebDriverManager.Instance.Close();
         }
     }
 }

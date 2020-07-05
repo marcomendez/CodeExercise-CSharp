@@ -2,7 +2,7 @@
 using Code.Exercise.Helper.Enums;
 using OpenQA.Selenium;
 
-namespace Code.Exercise.Locators.Locators
+namespace Code.Exercise.Elements.Locators
 {
     public class Locator
     {

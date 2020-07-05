@@ -1,6 +1,6 @@
-﻿using Code.Exercise.Helper.Attributes;
+﻿using Code.Exercise.Elements.Elements;
+using Code.Exercise.Helper.Attributes;
 using Code.Exercise.Helper.Enums;
-using Code.Exercise.Locators.Elements;
 
 namespace Code.Exercise.Pages
 {

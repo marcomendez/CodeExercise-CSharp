@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Code.Exercise.Locators\Code.Exercise.Locators.csproj" />
+    <ProjectReference Include="..\Code.Exercise.Locators\Code.Exercise.Elements.csproj" />
     <ProjectReference Include="..\Code.Exercise.Pages\Code.Exercise.Pages.csproj" />
     <ProjectReference Include="..\Code.Exercise.Steps\Code.Exercise.Steps.csproj" />
   </ItemGroup>

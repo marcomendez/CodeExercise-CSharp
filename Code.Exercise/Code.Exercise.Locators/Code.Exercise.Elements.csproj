@@ -2,13 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <AssemblyName>Code.Exercise.Locators</AssemblyName>
-    <RootNamespace>Code.Exercise.Locators</RootNamespace>
+    <AssemblyName>Code.Exercise.Elements</AssemblyName>
+    <RootNamespace>Code.Exercise.Elements</RootNamespace>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Selenium.WebDriver" Version="3.141.0" />
-  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Code.Exercise.Helper\Code.Exercise.Helper.csproj" />
