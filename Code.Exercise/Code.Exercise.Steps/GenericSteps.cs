@@ -14,7 +14,7 @@ namespace Code.Exercise.Steps
         [StepDefinition(@"I go to '([^']+?)' page")]
         public void NavigateToPage(string url)
         {
-            WebDriverManager.Instance.Start(PagesUrl.GetUrl(url));
+            WebDriverManager.Instance.Start(Urls.GetUrl(url));
         }
 
         [StepDefinition(@"I click ([^']+?)(?: on ([^']+?)|)")]

@@ -30,6 +30,7 @@ namespace Code.Exercise.Pages
         [Element("Check out", ElementType.Button)]
         [Locator(LocatorType.Id, "button_order_cart")]
         public Button CheckOut { get; }
+
         [Element("Continue shopping", ElementType.Button)]
         [Locator(LocatorType.CssSelector, "span[title = 'Continue shopping']")]
         public Button ContinueShopping { get; }

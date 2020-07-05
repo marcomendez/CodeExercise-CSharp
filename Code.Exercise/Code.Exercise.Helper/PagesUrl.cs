@@ -2,11 +2,11 @@
 
 namespace Code.Exercise.Helper
 {
-    public static class PagesUrl
+    public static class Urls
     {
         static Dictionary<string, string> urls = new Dictionary<string, string>
         {
-            {"Index", "http://automationpractice.com/index.php"}
+            { "Index", "http://automationpractice.com/index.php" }
         };
 
         public static string GetUrl(string key)
