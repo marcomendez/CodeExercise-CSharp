@@ -1,5 +1,5 @@
-﻿using Code.Exercise.WebManager;
-using NUnit.Framework;
+﻿using Code.Exercise.Helper;
+using Code.Exercise.WebManager;
 using TechTalk.SpecFlow;
 
 namespace Code.Exercise.Steps
@@ -10,11 +10,11 @@ namespace Code.Exercise.Steps
         public GenericSteps(ScenarioContext scenarioContext) : base(scenarioContext)
         {
         }
-        
-        [StepDefinition(@"I go to '([^']+?)'")]
-        public void NavigateToClickUp(string url)
+
+        [StepDefinition(@"I go to '([^']+?)' page")]
+        public void NavigateToPage(string url)
         {
-            WebDriverManager.Instance.Start(url);
+            WebDriverManager.Instance.Start(PagesUrl.GetUrl(url));
         }
 
         [StepDefinition(@"I click ([^']+?)(?: on ([^']+?)|)")]
@@ -28,18 +28,6 @@ namespace Code.Exercise.Steps
         {
             Element(elementToHover, PageName).Hover();
             Element(elementToClick, PageName).Click();
-        }
-
-        [StepDefinition(@"I verify that '([^']+?)' contains '([^']+?)'(?: on ([^']+?)|)")]
-        public void VerifyThatElementContainsText(string elementName, string text, string PageName)
-        {
-            bool status = Element(elementName, PageName).Contains(text);
-            Assert.IsTrue(status, $"The element {elementName} No contain {text}");
-        }
-
-        [StepDefinition(@"I verify that the following values are displayed(?: on ([^']+?)|)")]
-        public void VerifyThatElementsAreDisplayed(string elementName, string PageName, Table table)
-        {
         }
     }
 }
