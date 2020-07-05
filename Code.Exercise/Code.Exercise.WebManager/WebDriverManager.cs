@@ -1,6 +1,6 @@
-﻿using Code.Exercise.Helper;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using System;
 
 namespace Code.Exercise.WebManager
 {
@@ -32,6 +32,8 @@ namespace Code.Exercise.WebManager
             webDriver = new ChromeDriver();
             webDriver.Navigate().GoToUrl(url);
             webDriver.Manage().Window.Maximize();
+            webDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(15);
+
         }
 
         /// <summary>
