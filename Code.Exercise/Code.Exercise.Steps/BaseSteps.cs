@@ -20,6 +20,10 @@ namespace Code.Exercise.Steps
 
         private const string ElementsAssemblyName = "Code.Exercise.Elements";
 
+        /// <summary>
+        /// Constructors.
+        /// </summary>
+        /// <param name="injectedContext">Scenario contexts.</param>
         public BaseSteps(ScenarioContext injectedContext)
         {
             ScenarioContext = injectedContext;
@@ -84,7 +88,7 @@ namespace Code.Exercise.Steps
             Type elementClassType = Assembly.Load(ElementsAssemblyName).GetType(elementClass);
 
             // Instance Element
-            return Activator.CreateInstance(elementClassType, new object[] { elementName, GetLocator(elementInfo) });
+            return Activator.CreateInstance(elementClassType, new object[] {GetLocator(elementInfo) });
         }
 
         /// <summary>

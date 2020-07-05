@@ -7,6 +7,6 @@ namespace Code.Exercise.Helper
     /// </summary>
     public class Env
     {
-        public static string WebAppUrl = ConfigurationManager.AppSettings["WebAppUrl"];
+        public static string ImplicitWait = ConfigurationManager.AppSettings["ImplicitWait"];
     }
 }

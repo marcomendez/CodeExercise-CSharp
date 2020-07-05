@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using Code.Exercise.Helper;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;
 
@@ -9,6 +10,9 @@ namespace Code.Exercise.WebManager
     /// </summary>
     public sealed class WebDriverManager
     {
+        /// <summary>
+        /// Privates Constructor.
+        /// </summary>
         private WebDriverManager()
         { }
 
@@ -32,8 +36,7 @@ namespace Code.Exercise.WebManager
             webDriver = new ChromeDriver();
             webDriver.Navigate().GoToUrl(url);
             webDriver.Manage().Window.Maximize();
-            webDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(15);
-
+            webDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(int.Parse(Env.ImplicitWait));
         }
 
         /// <summary>

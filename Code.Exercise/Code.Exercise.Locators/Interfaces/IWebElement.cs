@@ -5,8 +5,6 @@ namespace Code.Exercise.Elements.Interfaces
 {
     public interface IWebElement
     {
-        string Name { get; set; }
-
         ElementType ElementType { get; set; }
 
         Locator Locator { get; set; }

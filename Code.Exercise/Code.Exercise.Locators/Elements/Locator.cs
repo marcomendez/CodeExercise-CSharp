@@ -4,18 +4,30 @@ using OpenQA.Selenium;
 
 namespace Code.Exercise.Elements.Locators
 {
+    /// <summary>
+    /// Handle Locator information.
+    /// </summary>
     public class Locator
     {
         public LocatorType Type { get; set; }
 
         public string Value { get; set; }
 
+        /// <summary>
+        /// Constructors.
+        /// </summary>
+        /// <param name="type">Locator type. (e. Xpath, Id, Css.).</param>
+        /// <param name="value">Value to find locator.</param>
         public Locator(LocatorType type, string value)
         {
             Type = type;
             Value = value;
         }
 
+        /// <summary>
+        /// Gets By instance of locator.
+        /// </summary>
+        /// <returns>By class instance of locator.</returns>
         public By GetBy()
         {
             switch (Type)
@@ -36,7 +48,7 @@ namespace Code.Exercise.Elements.Locators
                     return By.CssSelector(Value);
 
                 default:
-                    throw new Exception($"Cannot get '{typeof(By)}' object for '{Type}'.");
+                    throw new Exception($"Can not get '{typeof(By)}' object for '{Type}'.");
             }
         }
     }
