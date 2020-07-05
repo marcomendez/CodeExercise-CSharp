@@ -1,7 +1,18 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>Code.Exercise.Elements</AssemblyName>
+    <RootNamespace>Code.Exercise.Elements</RootNamespace>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Selenium.WebDriver" Version="3.141.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Code.Exercise.Helper\Code.Exercise.Helper.csproj" />
+    <ProjectReference Include="..\Code.Exercise.WebManager\Code.Exercise.WebManager.csproj" />
+  </ItemGroup>
 
 </Project>

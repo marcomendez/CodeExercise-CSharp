@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Code.Exercise.Helper\Code.Exercise.Helper.csproj" />
+    <ProjectReference Include="..\Code.Exercise.Locators\Code.Exercise.Locators.csproj" />
+  </ItemGroup>
+
 </Project>
