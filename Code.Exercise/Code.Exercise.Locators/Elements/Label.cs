@@ -1,5 +1,4 @@
 ﻿using Code.Exercise.Elements.Locators;
-using Code.Exercise.Helper.Enums;
 
 namespace Code.Exercise.Elements.Elements
 {
@@ -8,7 +7,7 @@ namespace Code.Exercise.Elements.Elements
     /// </summary>
     public class Label : WebElement
     {
-        public Label(Locator locator) : base(ElementType.Label, locator)
+        public Label(Locator locator) : base( locator)
         {
         }
     }

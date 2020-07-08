@@ -1,6 +1,5 @@
 ﻿using Code.Exercise.Elements.Interfaces;
 using Code.Exercise.Elements.Locators;
-using Code.Exercise.Helper.Enums;
 
 namespace Code.Exercise.Elements.Elements
 {
@@ -13,7 +12,7 @@ namespace Code.Exercise.Elements.Elements
         /// Constructors.
         /// </summary>
         /// <param name="locator">Locator info.</param>
-        public Button(Locator locator) : base(ElementType.Button, locator)
+        public Button(Locator locator) : base(locator)
         {
         }
 

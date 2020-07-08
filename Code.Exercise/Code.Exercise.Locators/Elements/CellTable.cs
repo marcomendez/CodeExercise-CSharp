@@ -1,6 +1,6 @@
 ﻿using Code.Exercise.Elements.Interfaces;
 using Code.Exercise.Elements.Locators;
-using Code.Exercise.Helper.Enums;
+
 namespace Code.Exercise.Elements.Elements
 {
     /// <summary>
@@ -8,7 +8,7 @@ namespace Code.Exercise.Elements.Elements
     /// </summary>
     public class CellTable : WebElement, IClickeable
     {
-        public CellTable(Locator locator) : base(ElementType.CellTable, locator)
+        public CellTable(Locator locator) : base(locator)
         {
         }
 

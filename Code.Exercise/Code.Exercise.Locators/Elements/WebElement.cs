@@ -1,6 +1,5 @@
 ﻿using Code.Exercise.Elements.Interfaces;
 using Code.Exercise.Elements.Locators;
-using Code.Exercise.Helper.Enums;
 using Code.Exercise.WebManager;
 using OpenQA.Selenium.Interactions;
 
@@ -11,7 +10,6 @@ namespace Code.Exercise.Elements.Elements
     /// </summary>
     public class WebElement : IWebElement
     {
-        public ElementType ElementType { get; set; }
         public Locator Locator { get; set; }
 
         /// <summary>
@@ -19,9 +17,8 @@ namespace Code.Exercise.Elements.Elements
         /// </summary>
         /// <param name="type">Element type (e. Button, Label, TextBox, etc.)</param>
         /// <param name="locator">Locator informaton (e. a[href='#blockbestsellers']).</param>
-        public WebElement(ElementType type, Locator locator)
+        public WebElement(Locator locator)
         {
-            ElementType = type;
             Locator = locator;
         }
 
